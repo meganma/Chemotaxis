@@ -1,4 +1,4 @@
-Bacteria[] hello;
+ Bacteria[] hello;
  void setup()   
  {     
    size(500,500);
@@ -17,12 +17,14 @@ Bacteria[] hello;
  }  
  class Bacteria    
  {     
-   int myColor, myX, myY; 
+   int myColorR, myColorG,myColorB,myX, myY; 
    
    Bacteria(int x,int y){
      myX=x;
      myY=y;
-     myColor=(255);
+     myColorR=250;
+     myColorG=238;
+     myColorB=5;
    }
    
  void move(){
@@ -31,7 +33,7 @@ Bacteria[] hello;
   }
    
    void show(){
-    fill(250,238,5);
+    fill(myColorR,myColorG,myColorB);
     bezier(myX,myY,10,110,280,150,280,280);
 
 
