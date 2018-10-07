@@ -28,13 +28,13 @@
    }
    
  void move(){
-      myX = myX + (int)(Math.random()*20)-2;
-      myY = myY + (int)(Math.random()*20)-2;
+      myX = myX + (int)(Math.random()*60)-2;
+      myY = myY + (int)(Math.random()*60)-2;
   }
    
    void show(){
     fill(myColorR,myColorG,myColorB);
-    bezier(myX,myY,10,110,280,150,280,280);
+    ellipse(myX,myY,5,5);
 
 
    }
